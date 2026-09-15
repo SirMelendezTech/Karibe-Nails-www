@@ -10,105 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --pink:#FFAAD6;
-    --red:#FE4451;
-    --orange:#FF9643;
-    --green:#C2D076;
-    --cream:#F5F3ED;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html,body{height:100%;}
-  body{
-    background:var(--cream);
-    font-family:'Montserrat',sans-serif;
-    color:var(--red);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-    position:relative;
-  }
-
-  /* ---------- decoraciones flotantes ---------- */
-  .deco{position:absolute;pointer-events:none;z-index:0;}
-  .deco svg{display:block;overflow:visible;}
-  .spin-slow{animation:spin 60s linear infinite;transform-origin:center;}
-  .float-a{animation:float 7s ease-in-out infinite;}
-  .float-b{animation:float 9s ease-in-out infinite reverse;}
-  .sparkle{animation:twinkle 2.6s ease-in-out infinite;transform-origin:center;}
-  @keyframes spin{to{transform:rotate(360deg);}}
-  @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-16px);}}
-  @keyframes twinkle{0%,100%{opacity:.25;transform:scale(.7);}50%{opacity:1;transform:scale(1.15);}}
-
-  /* ---------- tarjeta central ---------- */
-  .card{
-    position:relative;z-index:2;
-    text-align:center;
-    padding:3rem 2rem;
-    max-width:640px;width:92%;
-  }
-  .logo{width:min(420px,80vw);margin:0 auto;display:block;}
-  .brand{
-    font-family:'DM Serif Display',serif;
-    font-size:clamp(3.2rem,10vw,5.2rem);
-    line-height:.9;
-    color:var(--red);
-    letter-spacing:-.02em;
-  }
-  .brand .word{
-    display:block;
-    text-shadow:4px 4px 0 var(--pink);
-  }
-  .coming{
-    margin-top:2.2rem;
-    font-family:'DM Serif Display',serif;
-    font-style:italic;
-    font-size:clamp(1.6rem,4.5vw,2.4rem);
-    color:var(--orange);
-  }
-  .tagline{
-    margin-top:1rem;
-    font-size:clamp(.95rem,2.5vw,1.1rem);
-    font-weight:600;
-    color:var(--red);
-    letter-spacing:.12em;
-    text-transform:uppercase;
-  }
-  .divider{
-    width:80px;height:4px;border-radius:2px;
-    background:var(--pink);
-    margin:1.6rem auto;
-  }
-  .btn{
-    display:inline-block;
-    margin-top:.6rem;
-    padding:.85rem 2.2rem;
-    border-radius:999px;
-    background:var(--red);
-    color:var(--cream);
-    font-weight:700;
-    font-size:.95rem;
-    letter-spacing:.08em;
-    text-decoration:none;
-    text-transform:uppercase;
-    transition:transform .2s ease, background .2s ease;
-  }
-  .btn:hover{background:var(--orange);transform:translateY(-3px);}
-  .domain{
-    margin-top:2.4rem;
-    font-size:.85rem;
-    font-weight:600;
-    letter-spacing:.25em;
-    text-transform:uppercase;
-    color:var(--red);
-    opacity:.7;
-  }
-  @media (prefers-reduced-motion:reduce){
-    *{animation:none !important;}
-  }
-</style>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -198,6 +100,8 @@
     </div>
     <p class="domain">KaribeNails.com</p>
   </main>
-
+    <footer>
+     Made by <a href="https://MelendezTech.com" target="_blank" rel="noopener">MelendezTech.com</a>
+    </footer>
 </body>
 </html>
