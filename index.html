@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karibe Nails — Coming Soon</title>
+<meta name="description" content="Karibe Nails — Muy pronto. KaribeNails.com">
+<!-- Fuentes: Montserrat (del brand). Si tienes licencia de Beauty Rainira,
+     súbela al repo y descomenta el @font-face para reemplazar 'DM Serif Display' -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#FFAAD6;
+    --red:#FE4451;
+    --orange:#FF9643;
+    --green:#C2D076;
+    --cream:#F5F3ED;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:var(--cream);
+    font-family:'Montserrat',sans-serif;
+    color:var(--red);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    position:relative;
+  }
+
+  /* ---------- decoraciones flotantes ---------- */
+  .deco{position:absolute;pointer-events:none;z-index:0;}
+  .deco svg{display:block;overflow:visible;}
+  .spin-slow{animation:spin 60s linear infinite;transform-origin:center;}
+  .float-a{animation:float 7s ease-in-out infinite;}
+  .float-b{animation:float 9s ease-in-out infinite reverse;}
+  .sparkle{animation:twinkle 2.6s ease-in-out infinite;transform-origin:center;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-16px);}}
+  @keyframes twinkle{0%,100%{opacity:.25;transform:scale(.7);}50%{opacity:1;transform:scale(1.15);}}
+
+  /* ---------- tarjeta central ---------- */
+  .card{
+    position:relative;z-index:2;
+    text-align:center;
+    padding:3rem 2rem;
+    max-width:640px;width:92%;
+  }
+  .logo{width:min(420px,80vw);margin:0 auto;display:block;}
+  .brand{
+    font-family:'DM Serif Display',serif;
+    font-size:clamp(3.2rem,10vw,5.2rem);
+    line-height:.9;
+    color:var(--red);
+    letter-spacing:-.02em;
+  }
+  .brand .word{
+    display:block;
+    text-shadow:4px 4px 0 var(--pink);
+  }
+  .coming{
+    margin-top:2.2rem;
+    font-family:'DM Serif Display',serif;
+    font-style:italic;
+    font-size:clamp(1.6rem,4.5vw,2.4rem);
+    color:var(--orange);
+  }
+  .tagline{
+    margin-top:1rem;
+    font-size:clamp(.95rem,2.5vw,1.1rem);
+    font-weight:600;
+    color:var(--red);
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+  .divider{
+    width:80px;height:4px;border-radius:2px;
+    background:var(--pink);
+    margin:1.6rem auto;
+  }
+  .btn{
+    display:inline-block;
+    margin-top:.6rem;
+    padding:.85rem 2.2rem;
+    border-radius:999px;
+    background:var(--red);
+    color:var(--cream);
+    font-weight:700;
+    font-size:.95rem;
+    letter-spacing:.08em;
+    text-decoration:none;
+    text-transform:uppercase;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn:hover{background:var(--orange);transform:translateY(-3px);}
+  .domain{
+    margin-top:2.4rem;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+    color:var(--red);
+    opacity:.7;
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- Flor grande, esquina superior derecha -->
+  <div class="deco float-a" style="top:-70px;right:-70px;">
+    <svg class="spin-slow" width="300" height="300" viewBox="-150 -150 300 300">
+      <g fill="#FF9643">
+        <ellipse cx="0" cy="-78" rx="42" ry="62"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-78" rx="42" ry="62" transform="rotate(315)"/>
+      </g>
+      <circle r="38" fill="#FE4451"/>
+    </svg>
+  </div>
+
+  <!-- Hoja + flor pequeña, esquina inferior izquierda -->
+  <div class="deco float-b" style="bottom:-40px;left:-50px;">
+    <svg width="260" height="260" viewBox="0 0 260 260">
+      <g transform="translate(70,150) rotate(-25)">
+        <path d="M0,0 C-70,-20 -90,-90 -40,-130 C10,-160 90,-120 85,-50 C82,-10 45,15 0,0 Z" fill="#C2D076"/>
+        <path d="M-35,-115 C0,-80 30,-45 55,-15 M-50,-80 C-15,-55 15,-30 45,-5 M-55,-40 C-25,-25 5,-10 35,2"
+              stroke="#F5F3ED" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(190,190)">
+        <g fill="#FFAAD6">
+          <ellipse cx="0" cy="-34" rx="17" ry="26"/>
+          <ellipse cx="0" cy="-34" rx="17" ry="26" transform="rotate(72)"/>
+          <ellipse cx="0" cy="-34" rx="17" ry="26" transform="rotate(144)"/>
+          <ellipse cx="0" cy="-34" rx="17" ry="26" transform="rotate(216)"/>
+          <ellipse cx="0" cy="-34" rx="17" ry="26" transform="rotate(288)"/>
+        </g>
+        <circle r="17" fill="#FE4451"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Destellos -->
+  <svg class="deco sparkle" style="top:18%;left:12%;" width="34" height="34" viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FE4451"/></svg>
+  <svg class="deco sparkle" style="bottom:22%;right:14%;animation-delay:1.2s;" width="26" height="26" viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FE4451"/></svg>
+  <svg class="deco sparkle" style="top:55%;right:8%;animation-delay:.6s;" width="20" height="20" viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FF9643"/></svg>
+
+  <!-- Contenido principal -->
+  <main class="card">
+    <svg class="logo" viewBox="0 0 420 260" role="img" aria-label="Karibe Nails">
+      <!-- hojas detrás -->
+      <g transform="translate(300,70) rotate(15)">
+        <path d="M0,0 C60,-15 85,-75 45,-110 C5,-140 -65,-110 -60,-50 C-57,-15 -35,10 0,0 Z" fill="#C2D076"/>
+        <path d="M30,-95 C10,-60 -5,-30 -20,-5 M50,-70 C30,-45 10,-20 -5,0" stroke="#F5F3ED" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- flor naranja -->
+      <g transform="translate(120,88)">
+        <g fill="#FF9643">
+          <ellipse cx="0" cy="-52" rx="28" ry="42"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-52" rx="28" ry="42" transform="rotate(315)"/>
+        </g>
+        <circle r="26" fill="#FE4451"/>
+      </g>
+      <!-- destellos -->
+      <path d="M335,135 L338,146 L349,149 L338,152 L335,163 L332,152 L321,149 L332,146 Z" fill="#FE4451"/>
+      <path d="M78,178 L80,186 L88,188 L80,190 L78,198 L76,190 L68,188 L76,186 Z" fill="#FE4451"/>
+      <!-- wordmark -->
+      <text x="210" y="158" text-anchor="middle" class="brand"
+            style="font-size:74px;" fill="#FE4451"
+            stroke="#FFAAD6" stroke-width="10" paint-order="stroke" stroke-linejoin="round">karibe</text>
+      <text x="210" y="228" text-anchor="middle" class="brand"
+            style="font-size:60px;font-style:italic;" fill="#FE4451"
+            stroke="#FFAAD6" stroke-width="9" paint-order="stroke" stroke-linejoin="round">nails</text>
+    </svg>
+
+    <h1 class="coming">¡Muy pronto!</h1>
+    <p class="tagline">Estamos puliendo cada detalle</p>
+    <div class="divider"></div>
+    <a class="btn" href="https://instagram.com/karibenails" target="_blank" rel="noopener">Síguenos en Instagram</a>
+    <p class="domain">KaribeNails.com</p>
+  </main>
+
+</body>
+</html>
